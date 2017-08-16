@@ -7,4 +7,7 @@ view (dDay, untilDDay) =
     let
         untilDDayString = toString untilDDay
     in
-        text <| "D-Day is " ++ dDay ++ ". " ++ untilDDayString ++ " days away."
+        div []
+            [ text <| "D-Day is " ++ dDay ++ "."
+            , div [] [ text <| untilDDayString ++ " days away." ]
+            ]

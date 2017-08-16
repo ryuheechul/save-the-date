@@ -17,8 +17,8 @@ import Bootstrap.Grid.Col as Col
 view : Model -> Html Msg
 view model =
     Grid.container [ class "text-center" ]
-        [ h1 [] [ text "Save the date!" ]
-        , Menu.view
+        [ h1 [ class "my-5" ] [ text "Save the date!" ]
+        -- , Menu.view
         , render_page model
         ]
 

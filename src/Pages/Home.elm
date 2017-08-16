@@ -9,9 +9,14 @@ import Pages.Home.Footer as Footer
 
 view {dDay, untilDDay} =
     div []
-        [ Hero.view "I'm a hero!"
+        [ hr [] []
+        , Hero.view "I'm a hero!"
+        , hr [] []
         , PhotoSection.view ["1", "2"]
+        , hr [] []
         , Date.view (dDay, untilDDay)
+        , hr [] []
         , Map.view
+        , hr [] []
         , Footer.view
         ]
