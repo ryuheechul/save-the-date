@@ -7,6 +7,7 @@ import Update exposing (..)
 
 import Pages.Home as Home
 import Pages.Menu as Menu
+import Pages.Nav as Nav
 
 import Bootstrap.Grid as Grid
 import Bootstrap.Grid.Row as Row
@@ -19,6 +20,7 @@ view model =
     Grid.container [ class "text-center" ]
         [ h1 [ class "my-5" ] [ text "Save the date!" ]
         -- , Menu.view
+        , Nav.view model
         , render_page model
         ]
 

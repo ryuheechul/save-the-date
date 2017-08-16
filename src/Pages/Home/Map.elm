@@ -1,7 +1,7 @@
 module Pages.Home.Map exposing (view)
 
 import Html exposing (..)
-import Html.Attributes exposing (..)
+import Html.Attributes exposing (class, style, src, height, href, target)
 
 view =
     div [] <|

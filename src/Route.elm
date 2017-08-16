@@ -4,6 +4,7 @@ import Model exposing (..)
 import Update exposing (..)
 import Navigation exposing (..)
 import UrlParser exposing (map, s, oneOf, (</>), int, Parser, parseHash)
+import Bootstrap.Navbar as Navbar
 
 type alias Flags =
     { dDay: String
