@@ -1,10 +1,10 @@
 module Pages.Home.PhotoSection exposing (..)
 
-import Html exposing (..)
-import Html.Attributes exposing (alt, style)
+import Html exposing (a)
+import Html.Attributes exposing (alt, href, target)
 import Comps.PhotoBox as PhotoBox
 import Comps.Slide as Slide
-import Constants exposing (heroImageUrl, slideImageUrls)
+import Constants exposing (heroImageUrl, slideImageUrls, albumUrl)
 
 view carouselState =
-    Slide.view slideImageUrls carouselState
+    a [ href albumUrl, target "_blank" ] [ Slide.view slideImageUrls carouselState ]
