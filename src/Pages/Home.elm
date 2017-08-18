@@ -8,21 +8,27 @@ import Pages.Home.Date as Date
 import Pages.Home.Map as Map
 import Pages.Home.Footer as Footer
 import Pages.Nav exposing (anchor)
+import Model exposing (Model)
+import Update exposing (Msg)
 
-view {dDay, untilDDay} =
-    div []
-        [ hr [] []
-        , anchor "top"
-        , Hero.view "I'm a hero!"
-        , hr [] []
-        , anchor "photo"
-        , PhotoSection.view ["1", "2"]
-        , hr [] []
-        , anchor "date"
-        , Date.view (dDay, untilDDay)
-        , hr [] []
-        , anchor "map"
-        , Map.view
-        , hr [] []
-        , Footer.view
-        ]
+view : Model -> Html Msg
+view model =
+    let
+        { dDay, untilDDay, carouselState } = model
+    in
+        div []
+            [ hr [] []
+            , anchor "top"
+            , Hero.view "I'm a hero!"
+            , hr [] []
+            , anchor "photo"
+            , PhotoSection.view carouselState
+            , hr [] []
+            , anchor "date"
+            , Date.view (dDay, untilDDay)
+            , hr [] []
+            , anchor "map"
+            , Map.view
+            , hr [] []
+            , Footer.view
+            ]

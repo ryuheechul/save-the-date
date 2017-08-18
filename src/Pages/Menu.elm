@@ -6,7 +6,6 @@ import Update exposing (..)
 
 import Bootstrap.Grid as Grid
 import Bootstrap.Grid.Row as Row
-import Bootstrap.Grid.Col as Col
 
 view : Html Msg
 view =

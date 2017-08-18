@@ -10,10 +10,6 @@ import Pages.Menu as Menu
 import Pages.Nav as Nav
 
 import Bootstrap.Grid as Grid
-import Bootstrap.Grid.Row as Row
-import Bootstrap.Grid.Col as Col
-
--- VIEW
 
 view : Model -> Html Msg
 view model =

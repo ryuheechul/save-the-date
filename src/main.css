@@ -10,3 +10,25 @@
 /*   margin: 20px 0; */
 /*   max-width: 200px; */
 /* } */
+
+.carousel-inner img {
+  object-fit: contain;
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .carousel-inner .carousel-item {
+    height: 300px !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .carousel-inner .carousel-item {
+    height: 350px !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .carousel-inner .carousel-item {
+    height: 500px !important;
+  }
+}

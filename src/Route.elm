@@ -1,10 +1,11 @@
-module Route exposing (locFor, init)
+module Route exposing (locFor, route)
 
 import Model exposing (..)
 import Update exposing (..)
 import Navigation exposing (..)
 import UrlParser exposing (map, s, oneOf, (</>), int, Parser, parseHash)
 import Bootstrap.Navbar as Navbar
+import Bootstrap.Carousel as Carousel
 
 type alias Flags =
     { dDay: String
@@ -20,26 +21,8 @@ route =
         , map PostShow (s "post" </> int)
         ]
 
-
 locFor : Location -> Msg
 locFor location =
     parseHash route location
         |> GoTo
-
-init : Location -> ( Model, Cmd Msg )
--- init : Flags -> Location -> ( Model, Cmd Msg )
--- init flags location =
-init location =
-    let
-        page =
-            case parseHash route location of
-                Nothing ->
-                    Home
-
-                Just page ->
-                    page
-        dDay = "2018/04/28"
-        untilDDay = 250
-    in
-        ( Model page dDay untilDDay, Cmd.none )
 
