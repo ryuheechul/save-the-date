@@ -14,7 +14,7 @@ import Bootstrap.Grid as Grid
 view : Model -> Html Msg
 view model =
     Grid.container [ class "text-center" ]
-        [ h1 [ class "my-5" ] [ text "Save the date!" ]
+        [ h1 [ class "my-5" ] [ text "She said yes!" ]
         -- , Menu.view
         , Nav.view model
         , render_page model

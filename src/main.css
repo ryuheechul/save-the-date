@@ -15,6 +15,14 @@
   object-fit: contain;
 }
 
+.fade-in-on-hover {
+  visibility: hidden;
+}
+
+a:hover .fade-in-on-hover {
+  visibility: visible;
+}
+
 @media (max-width: 480px) {
   .carousel-inner .carousel-item {
     height: 300px !important;

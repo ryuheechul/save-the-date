@@ -4,6 +4,8 @@ heroImageUrl = "https://lh3.googleusercontent.com/fj_NNXjHnORLtK8bcBaM2X3IfR0KFW
 
 mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.1469923794966!2d127.00032935131836!3d37.55160047970161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca306cb20ef5f%3A0x45d36b95856891f4!2z64Ko7IKw7KCc7J206re4656c7ZWY7Jqw7Iqk!5e0!3m2!1sko!2skr!4v150284562343"
 
+-- mapUrl = "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%9E%A5%EC%B6%A9%EB%8B%A8%EB%A1%9C%2072%20%ED%95%9C%EA%B5%AD%EC%9E%90%EC%9C%A0%EC%B4%9D%EC%97%B0%EB%A7%B9&t=&z=15&ie=UTF8&iwloc=&output=embed"
+
 address = "서울특별시 중구 장충단로 72 한국자유총연맹"
 
 albumUrl = "https://goo.gl/photos/PTJ1uFzEiKyUAHhe9"

@@ -16,7 +16,6 @@ view urls carouselState =
         carouselStyle = style [ ("background-color", "black")
                               , ("border-radius", "1.5rem")]
     in
-        Carousel.config CarouselMsg [ carouselStyle
-                                    , class "mx-lg-3" ]
+        Carousel.config CarouselMsg [ carouselStyle ]
             |> Carousel.slides slides
             |> Carousel.view carouselState

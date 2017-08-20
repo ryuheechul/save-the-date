@@ -19,7 +19,7 @@ view model =
         div []
             [ hr [] []
             , anchor "top"
-            , Hero.view "I'm a hero!"
+            , Hero.view "Save the date!"
             , hr [] []
             , anchor "photo"
             , PhotoSection.view carouselState
