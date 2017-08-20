@@ -15,11 +15,15 @@
   object-fit: contain;
 }
 
+.carousel.slide, .carousel-inner {
+  border-radius: 1.5rem;
+}
+
 .fade-in-on-hover {
   visibility: hidden;
 }
 
-a:hover .fade-in-on-hover {
+.carousel-item:hover .fade-in-on-hover {
   visibility: visible;
 }
 

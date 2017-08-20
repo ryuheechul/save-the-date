@@ -9,20 +9,6 @@ import Constants exposing (heroImageUrl, slideImageUrls, albumUrl)
 view carouselState =
     let
         containerStyle = style [ ("position", "relative") ]
-        titleStyle = style [ ("position", "absolute")
-                           , ("bottom", "20px")
-                           , ("width", "100%")
-                           , ("font-size", "2rem")
-                           , ("color", "white")
-                           ]
-        slideView = Slide.view slideImageUrls carouselState
-        title = div [ titleStyle
-                    , class "mx-auto text-center fade-in-on-hover"
-                    ] [ text "Click to see more" ]
+        slideView = Slide.view slideImageUrls albumUrl carouselState
     in
-        a [ href albumUrl, target "_blank" ]
-            <| [ div [ containerStyle ]
-                     <| [ slideView
-                        , title
-                        ]
-               ]
+        div [ containerStyle ] [ slideView ]
