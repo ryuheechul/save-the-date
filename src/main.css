@@ -1,15 +1,24 @@
-/* body { */
-/*   font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif; */
-/*   font-size: 30px; */
-/*   margin: 0; */
-/*   text-align: center; */
-/*   color: #293c4b; */
-/* } */
+#map + div {
+  height: 450px;
+}
 
-/* img { */
-/*   margin: 20px 0; */
-/*   max-width: 200px; */
-/* } */
+@media (max-width: 540px) {
+  #map + div {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1140px) {
+  #map + div {
+    height: 600px;
+  }
+}
+
+/* carousel */
+
+.fade-in-on-hover {
+  visibility: hidden;
+}
 
 .carousel-inner img {
   object-fit: contain;
@@ -17,10 +26,6 @@
 
 .carousel.slide, .carousel-inner {
   border-radius: 1.5rem;
-}
-
-.fade-in-on-hover {
-  visibility: hidden;
 }
 
 .carousel-item:hover .fade-in-on-hover {

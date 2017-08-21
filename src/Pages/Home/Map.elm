@@ -12,14 +12,12 @@ view =
 
 iframeAttrs =
     [ src mapUrl
-    -- , width 600
-    , height 450
+    , class "w-100 h-100"
     , style iframeStyle
     ]
 
 iframeStyle =
     [ ("border", "0")
-    , ("width", "100%")
     ]
 
 addressView  =
