@@ -1,5 +1,7 @@
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
+Demo: [Click here](https://ryuheechul.github.io/save-the-date/).
+
 Below you will find some information on how to perform basic tasks.  
 You can find the most recent version of this guide [here](https://github.com/halfzebra/create-elm-app/blob/master/template/README.md).
 
