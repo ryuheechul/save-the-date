@@ -1,4 +1,4 @@
-module Pages.Home.Hero exposing (..)
+module Pages.Home.Hero exposing (view)
 
 import Html exposing (..)
 import Html.Attributes exposing (src, class, style)
@@ -10,13 +10,23 @@ view title=
         containerStyle =
             style [ ("position", "relative")
                   ]
+        titleStyleCss =
+            [ ("position", "absolute")
+            , ("left", "35px")
+            , ("top", "15px")
+            , ("color", "white")
+            , ("font-size", "2.5rem")
+            ]
+
         titleStyle =
-            style [ ("position", "absolute")
-                  , ("left", "35px")
-                  , ("top", "15px")
-                  , ("color", "white")
-                  , ("font-size", "2.5rem")
-                  ]
+            style titleStyleCss
+
+        mobileTitleStyle =
+            style <| titleStyleCss ++
+                [ ("top", "auto")
+                , ("bottom", "15px")
+                ]
+
         imgStyle =
             style [ ("border-radius", "0.6rem")
                   ]
@@ -27,5 +37,6 @@ view title=
                   , class "img-fluid w-100"
                   , imgStyle
                   ] []
-            , div [ titleStyle ] [ text title ]
+            , div [ titleStyle, class "hidden-sm-down" ] [ text title ]
+            , div [ mobileTitleStyle, class "hidden-md-up" ] [ text title ]
             ]
