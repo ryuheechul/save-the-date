@@ -1,7 +1,7 @@
 module Pages.Home.Map exposing (view)
 
 import Html exposing (div, ul, li, iframe, text, a, Html)
-import Html.Attributes exposing (class, style, src, height, href, target)
+import Html.Attributes exposing (class, style, src, height, href, target, id)
 import Constants exposing (mapUrl, address)
 
 view =
@@ -11,8 +11,9 @@ view =
         ] ++ [ recommended ]
 
 iframeAttrs =
-    [ src mapUrl
-    , class "w-100 h-100"
+    [ id "map-iframe"
+    , src mapUrl
+    , class "w-100"
     , style iframeStyle
     ]
 

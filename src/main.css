@@ -1,15 +1,21 @@
-#map + div {
+#map-iframe {
   height: 450px;
 }
 
+@media (max-width: 768px) {
+  #map-iframe {
+    height: 350px;
+  }
+}
+
 @media (max-width: 540px) {
-  #map + div {
-    height: 300px;
+  #map-iframe {
+    height: 260px;
   }
 }
 
 @media (min-width: 1140px) {
-  #map + div {
+  #map-iframe {
     height: 600px;
   }
 }
