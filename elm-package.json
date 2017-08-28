@@ -2,6 +2,7 @@
     "version": "1.0.0",
     "summary": "My wedding invitation web page written in Elm",
     "repository": "https://github.com/ryuheechul/save-the-date.git",
+    "homepage": "https://ryuheechul.github.io/save-the-date",
     "license": "BSD3",
     "source-directories": [
         "src"
