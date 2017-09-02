@@ -1,6 +1,5 @@
 import './main.css';
 import { Main } from './Main.elm';
-import timeago from 'timeago.js';
 import moment from 'moment';
 import 'moment-timezone';
 
@@ -9,12 +8,12 @@ const flags = (function(){
   const localTz = moment.tz.guess();
   const localNow = moment().tz(localTz);
   const localDay = localNow.startOf('day');
-  const dDayDay = dDay.tz(localTz).startOf('day');
+  const dDayDay = dDay.clone().tz(localTz).startOf('day');
   const dDayDiff = localDay.diff(dDayDay, 'days');
   const diffAbs = Math.abs(dDayDiff)
 
   return {
-    dDay: dDay.format('YYYY-MM-DD h:mm:ss A z'),
+    dDay: dDay.format('YYYY-MM-DD h:mm A z'),
     untilDDay: Number(diffAbs),
   }
 })();
