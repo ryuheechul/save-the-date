@@ -1,4 +1,4 @@
-module Route exposing (locFor, route)
+module Route exposing (locFor, route, Flags)
 
 import Model exposing (..)
 import Update exposing (..)
