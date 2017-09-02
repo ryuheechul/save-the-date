@@ -1,7 +1,7 @@
 module Pages.Home.Date exposing (view)
 
-import Html exposing ( Html, div, text )
-import Html.Attributes exposing ( id )
+import Html exposing ( Html, div, text, a )
+import Html.Attributes exposing ( href )
 
 view : (String, Int) -> Html msg
 view (dDay, untilDDay) =
@@ -15,5 +15,5 @@ view (dDay, untilDDay) =
         div []
             [ text <| "D-Day is " ++ dDay ++ "."
             , div [] [ text <| untilDDayString ++ awayText ]
-            , div [ id "until-d-day" ] []
+            , a [ href "LK&HR-Wed.ics" ] [ text "Add to your calendar"]
             ]
