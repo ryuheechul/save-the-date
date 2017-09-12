@@ -25,13 +25,14 @@ view title=
             style <| titleStyleCss ++
                 [ ("top", "auto")
                 , ("bottom", "15px")
+                , ("font-size", "2rem")
                 ]
 
         imgStyle =
             style [ ("border-radius", "0.6rem")
                   ]
     in
-        div [ containerStyle ]
+        div [ containerStyle, class "font-bungee" ]
             [ text ""
             , img [ src heroImageUrl
                   , class "img-fluid w-100"

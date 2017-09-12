@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bungee+Inline|Bungee+Shade|Diplomata|Faster+One|Knewave|Mr+Dafoe|Skranji');
+
+.font-dafoe {
+  font-family: 'Mr Dafoe', cursive;
+}
+
+.font-alfa {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.font-bungee {
+  font-family: 'Bungee Inline', cursive;
+}
+.font-knewave {
+  font-family: 'Knewave', cursive;
+}
+
+.font-skranji {
+  font-family: 'Skranji', cursive;
+}
+
+.font-faster {
+  font-family: 'Faster One', cursive;
+}
+
+.font-shade {
+  font-family: 'Bungee Shade', cursive;
+}
+
+.font-diplomata {
+  font-family: 'Diplomata', cursive;
+}
+
 #map-iframe {
   height: 450px;
 }

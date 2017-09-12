@@ -11,10 +11,30 @@ import Pages.Nav as Nav
 
 import Bootstrap.Grid as Grid
 
+titleView : Html Msg
+titleView =
+    let
+        l =
+            [ " font-dafoe"
+            -- , " font-knewave"
+            -- , " font-bungee"
+            -- , " font-alfa"
+            -- , " font-skranji"
+            -- , " font-faster"
+            -- , " font-shade"
+            -- , " font-diplomata"
+            ]
+        fn fc =
+            h1 [ class ("my-5" ++ fc) ] [ text "She said yes!" ]
+        hs =
+            List.map fn l
+    in
+        div [] hs
+
 view : Model -> Html Msg
 view model =
     Grid.container [ class "text-center" ]
-        [ h1 [ class "my-5" ] [ text "She said yes!" ]
+        [ titleView
         -- , Menu.view
         , Nav.view model
         , render_page model
