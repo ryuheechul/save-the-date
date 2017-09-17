@@ -37,6 +37,6 @@ view =
     in
         div [ class "my-5" ]
             [ titleView title
-            , h5 [ class "text-muted mt-4 font-bungee" ] [ text "RSVP, Please!" ]
+            -- , h5 [ class "text-muted mt-4 font-bungee" ] [ text "RSVP, Please!" ]
             ]
 

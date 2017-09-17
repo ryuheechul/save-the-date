@@ -27,7 +27,7 @@ classLinkActive =
     class "nav-link active"
 
 classLink =
-    class "nav-link"
+    class "nav-link text-info"
 
 classNavBar =
     class "nav nav-pills nav-fill sticky-top"
