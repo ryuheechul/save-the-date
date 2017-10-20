@@ -10,9 +10,10 @@ import Pages.Menu as Menu
 import Pages.Nav as Nav
 
 import Bootstrap.Grid as Grid
+import I18Next exposing (t)
 
-titleView : Html Msg
-titleView =
+titleView : I18Next.Translations -> Html Msg
+titleView translations =
     let
         l =
             [ " font-dafoe"
@@ -25,7 +26,7 @@ titleView =
             -- , " font-diplomata"
             ]
         fn fc =
-            h1 [ class ("my-5" ++ fc) ] [ text "She said yes!" ]
+            h1 [ class ("my-5" ++ fc) ] [ text (t translations "topTitle") ]
         hs =
             List.map fn l
     in
@@ -34,7 +35,7 @@ titleView =
 view : Model -> Html Msg
 view model =
     Grid.container [ class "text-center" ]
-        [ titleView
+        [ titleView model.translations
         -- , Menu.view
         , Nav.view model
         , render_page model

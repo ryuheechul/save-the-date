@@ -1,5 +1,7 @@
 module Model exposing (Page(..), Model)
 
+import I18Next exposing ( Translations )
+
 import Bootstrap.Carousel as Carousel
 
 type Page
@@ -14,4 +16,5 @@ type alias Model =
     , dDay: String
     , untilDDay: Int
     , carouselState : Carousel.State
+    , translations: Translations
     }

@@ -7,6 +7,8 @@ import Update exposing (..)
 import Route exposing (locFor, route, Flags)
 import Bootstrap.Carousel as Carousel
 import UrlParser exposing (parseHash)
+import I18Next exposing (decodeTranslations, initialTranslations)
+import Json.Decode
 
 main =
     Navigation.programWithFlags locFor
@@ -23,7 +25,7 @@ subscriptions model =
     Carousel.subscriptions model.carouselState CarouselMsg
 
 init : Flags -> Location -> ( Model, Cmd Msg )
-init {dDay, untilDDay} location =
+init {dDay, untilDDay, translations} location =
     let
         page =
             case parseHash route location of
@@ -40,5 +42,14 @@ init {dDay, untilDDay} location =
                     , pauseOnHover = True
                 }
     in
-        ( Model page dDay untilDDay carouselState
-        , Cmd.none )
+        let
+            translationsResult = Json.Decode.decodeValue decodeTranslations translations
+        in
+            let
+                tData =
+                    case translationsResult of
+                        Ok translations -> translations
+                        Err err -> initialTranslations
+            in
+                ( Model page dDay untilDDay carouselState tData
+                , Cmd.none )

@@ -2,6 +2,11 @@ import './main.css';
 import { Main } from './Main.elm';
 import moment from 'moment';
 import 'moment-timezone';
+import { translationsFor } from './translations.js';
+
+const translations = translationsFor(navigator.language || navigator.userLanguage)
+
+document.title = translations.pageTitle || document.title
 
 const flags = (function(){
   const dDay = moment.tz("2018-04-28 11:00", "Asia/Seoul");
@@ -15,6 +20,7 @@ const flags = (function(){
   return {
     dDay: dDay.format('YYYY-MM-DD h:mm A z'),
     untilDDay: Number(diffAbs),
+    translations: translations
   }
 })();
 

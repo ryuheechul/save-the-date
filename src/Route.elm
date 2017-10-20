@@ -6,10 +6,12 @@ import Navigation exposing (..)
 import UrlParser exposing (map, s, oneOf, (</>), int, Parser, parseHash)
 import Bootstrap.Navbar as Navbar
 import Bootstrap.Carousel as Carousel
+import Json.Encode
 
 type alias Flags =
     { dDay: String
     , untilDDay: Int
+    , translations: Json.Encode.Value
     }
 
 route : Parser (Page -> a) a
