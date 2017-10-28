@@ -2,6 +2,8 @@ module Pages.Home.MessageSection exposing (view)
 
 import Html exposing (div, text, h1, h5, small, Html)
 import Html.Attributes exposing (class)
+import Translations exposing ( translate, Keyword(..) )
+import Model exposing (..)
 
 -- rsvpFontClass =
 
@@ -25,14 +27,15 @@ titleView title =
     in
         div [] hs
 
-view: Html msg
-view =
+view : Model -> Html msg
+view model =
     let
+        t = translate model.translations
         title =
             h1 []
-                [ text "Lily"
+                [ text <| t Lily
                 , small [ class "text-muted" ] [ text " ❤️ " ]
-                , text "Heechul"
+                , text <| t Heechul
                 ]
     in
         div [ class "my-5" ]

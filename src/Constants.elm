@@ -6,8 +6,6 @@ mapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.14699237949
 
 -- mapUrl = "https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EC%9E%A5%EC%B6%A9%EB%8B%A8%EB%A1%9C%2072%20%ED%95%9C%EA%B5%AD%EC%9E%90%EC%9C%A0%EC%B4%9D%EC%97%B0%EB%A7%B9&t=&z=15&ie=UTF8&iwloc=&output=embed"
 
-address = "서울특별시 중구 장충단로 72 한국자유총연맹"
-
 albumUrl = "https://goo.gl/photos/PTJ1uFzEiKyUAHhe9"
 slideImageUrls =
     [ "https://lh3.googleusercontent.com/vUULzCqzd34NHn1lKiFmeU-w0S8ja8JRYnZMizA970h7IZ7tFHr1bEoanOk4MI56K6RdjPfXRoe8nhCSH44ViTfO2GnnFnncGYvEctRiA07zUVcIVzvIlbQ-9UkBSCOqV7HTRK7vXrx_FiWHWByjJglOb82xCbEW2AWBLo5H9hvYm2KGsRiKiVI5PnRThfH_ypbOr6R716l-vU4WT4Y4dlI25bH0cMfWwLV-lr39lENtHbFAtbMJ0Qdyilly-FXaPJdQopJ9Op6RPl22UiM7w95KguGhsDGSD14jmCb0OtF1PhtemmcQFY1DGxKmyAFJYmZq-UQB_y818sXCqTRXvEPxSRDQ0OwPAjy6BlXwapL-BA5Wu6Ovy-uErsVuZdwd5brgyQfYzAbQgeR7M6RTvwKTeLGZ6cbtBpkjipN0TgbgBAoYDEUXRsbyNndBvXCKNuwDyikIF83pkFaM68oRfo79wNdyGL9A4icjvhpcE8fHJ7ewLdNUnt8ducLyNlZK8HEws_xTK5qpH1HyocaWOwjgdtUgR6RCx4eCEZEzexaKknhnH28XgGcf4j4_0jLEHS6S_swJ4BvPbnW6nhNJpLQaUJMkjCVgrr61jA-nyV3OKQ5uKEirNZfrre3uv7AjcuEPeFctHXUBAwwOLT0IwtMDprKfap-OIZsXCy8LGRv-VD0=w504-h671-no"

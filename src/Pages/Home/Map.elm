@@ -2,13 +2,19 @@ module Pages.Home.Map exposing (view)
 
 import Html exposing (div, ul, li, iframe, text, a, Html)
 import Html.Attributes exposing (class, style, src, height, href, target, id)
-import Constants exposing (mapUrl, address)
+import Constants exposing (mapUrl)
+import Translations exposing (translate, Keyword(..))
+import Model exposing (Model)
+import Update exposing (Msg)
 
-view =
-    div [] <|
-        [ iframe iframeAttrs []
-        , addressView
-        ] ++ [ recommended ]
+view : Model -> Html Msg
+view model =
+    let t = translate model.translations
+    in
+        div [] <|
+            [ iframe iframeAttrs []
+            , addressView t
+            ] ++ [ recommended t ]
 
 iframeAttrs =
     [ id "map-iframe"
@@ -21,13 +27,13 @@ iframeStyle =
     [ ("border", "0")
     ]
 
-addressView  =
-    div [ class "text-muted" ] [ text address ]
+addressView t =
+    div [ class "text-muted" ] [ text <| t WeddAddr ]
 
-recommended =
+recommended t =
     ul [ class "text-left" ]
-    [ li [] [ text "shuttle bus from yaksoo station"]
-    , li [] [ text "bus from hanganjin station: "
+    [ li [] [ text <| t FromYaksu ]
+    , li [] [ text <| t FromHanganjin
             , simpleLink "http://naver.me/FWHEVQ82"
             ]
     ]

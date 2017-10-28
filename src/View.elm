@@ -10,11 +10,13 @@ import Pages.Menu as Menu
 import Pages.Nav as Nav
 
 import Bootstrap.Grid as Grid
-import I18Next exposing (t)
+import Translations exposing ( translate, Keyword(..) )
+import I18Next
 
 titleView : I18Next.Translations -> Html Msg
 titleView translations =
     let
+        t = translate translations
         l =
             [ " font-dafoe"
             -- , " font-knewave"
@@ -26,7 +28,7 @@ titleView translations =
             -- , " font-diplomata"
             ]
         fn fc =
-            h1 [ class ("my-5" ++ fc) ] [ text (t translations "topTitle") ]
+            h1 [ class ("my-5" ++ fc) ] [ text (t TopTitle) ]
         hs =
             List.map fn l
     in

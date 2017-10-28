@@ -11,28 +11,30 @@ import Pages.Home.MessageSection as MessageSection
 import Pages.Nav exposing (anchor)
 import Model exposing (Model)
 import Update exposing (Msg)
+import Translations exposing ( translate, Keyword(..) )
 
 view : Model -> Html Msg
 view model =
     let
         { dDay, untilDDay, carouselState } = model
+        t = translate model.translations
     in
         div []
             [ hr [] []
             , anchor "top"
-            , Hero.view "Save the date!"
+            , Hero.view <| t SaveTheDate
             , hr [] []
             , anchor "message"
-            , MessageSection.view
+            , MessageSection.view model
             , hr [] []
             , anchor "photo"
             , PhotoSection.view carouselState
             , hr [] []
             , anchor "date"
-            , Date.view (dDay, untilDDay)
+            , Date.view model (dDay, untilDDay)
             , hr [] []
             , anchor "map"
-            , Map.view
+            , Map.view model
             , hr [] []
             , Footer.view
             ]

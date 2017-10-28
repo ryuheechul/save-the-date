@@ -2,18 +2,22 @@ module Pages.Home.Date exposing (view)
 
 import Html exposing ( Html, div, text, a )
 import Html.Attributes exposing ( href )
+import Translations exposing ( translate, translateWV, Keyword(..) )
+import Model exposing (..)
 
-view : (String, Int) -> Html msg
-view (dDay, untilDDay) =
+view : Model -> (String, Int) -> Html msg
+view model (dDay, untilDDay) =
     let
+        t = translate model.translations
+        tr = translateWV model.translations
         untilDDayString = toString untilDDay
-        awayText =
+        awayKeyword =
             case untilDDay of
-                1 -> " day away from today."
-                _ -> " days away from today."
+                1 -> HowFar
+                _ -> HowFars
     in
         div []
-            [ text <| "D-Day is " ++ dDay ++ "."
-            , div [] [ text <| untilDDayString ++ awayText ]
-            , a [ href "LK&HR-Wed.ics" ] [ text "Add to your calendar"]
+            [ text <| tr TellDDay [("dDay", dDay)]
+            , div [] [ text <| tr awayKeyword [("daysLeft", untilDDayString)]]
+            , a [ href "LK&HR-Wed.ics" ] [ text <| t AddToCal]
             ]
