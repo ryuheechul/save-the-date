@@ -14,6 +14,10 @@ const translations = {
     weddAddr: "서울특별시 중구 장충단로 72 한국자유총연맹",
     fromYaksu: "약수역에서 셔틀버스",
     fromHanganjin: "한강진 역에서 버스타기: ",
+    photo: "사진",
+    date: "날짜",
+    map: "지도",
+    top: "위로",
   },
   "en-US": {
     pageTitle: "Save the date!",
@@ -28,6 +32,10 @@ const translations = {
     weddAddr: "72 Jangchungdan-ro, Jangchungdong 2(i)-ga, Jung-gu, Seoul",
     fromYaksu: "shuttle bus from yaksoo station",
     fromHanganjin: "bus from hanganjin station: ",
+    photo: "Photo",
+    date: "Date",
+    map: "Map",
+    top: "Top",
   }
 }
 

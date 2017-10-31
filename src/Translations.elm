@@ -14,6 +14,10 @@ type Keyword
     | WeddAddr
     | FromYaksu
     | FromHanganjin
+    | Photo
+    | Date
+    | Map
+    | Top
 
 kToS : Keyword -> String
 kToS keyword =
@@ -30,6 +34,10 @@ kToS keyword =
        WeddAddr -> "weddAddr"
        FromYaksu -> "fromYaksu"
        FromHanganjin -> "fromHanganjin"
+       Photo -> "photo"
+       Date -> "date"
+       Map -> "map"
+       Top -> "top"
 
 translate : Translations -> Keyword -> String
 translate translations keyword =
