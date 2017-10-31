@@ -1,34 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bungee+Inline|Bungee+Shade|Diplomata|Faster+One|Knewave|Mr+Dafoe|Skranji');
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+
 .font-dafoe {
-  font-family: 'Mr Dafoe', cursive;
+  font-family: 'Mr Dafoe', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-alfa {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-bungee {
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Bungee Inline', cursive, 'Nanum Pen Script', serif;
 }
 .font-knewave {
-  font-family: 'Knewave', cursive;
+  font-family: 'Knewave', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-skranji {
-  font-family: 'Skranji', cursive;
+  font-family: 'Skranji', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-faster {
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-shade {
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Shade', cursive, 'Nanum Pen Script', serif;
 }
 
 .font-diplomata {
-  font-family: 'Diplomata', cursive;
+  font-family: 'Diplomata', cursive, 'Nanum Pen Script', serif;
 }
 
 #map-iframe {
