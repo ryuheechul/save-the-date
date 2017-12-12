@@ -18,6 +18,7 @@ route : Parser (Page -> a) a
 route =
     oneOf
         [ map Home (s "home")
+        , map LeaveAMessage (s "leave-a-message")
         , map Login (s "login")
         , map About (s "about")
         , map PostShow (s "post" </> int)

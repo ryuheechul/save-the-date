@@ -6,6 +6,7 @@ import Bootstrap.Carousel as Carousel
 
 type Page
     = Home
+    | LeaveAMessage
     | Login
     | About
     | PostShow Int

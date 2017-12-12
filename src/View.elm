@@ -8,6 +8,7 @@ import Update exposing (..)
 import Pages.Home as Home
 import Pages.Menu as Menu
 import Pages.Nav as Nav
+import Pages.LAMessage as LAMessage
 
 import Bootstrap.Grid as Grid
 import Translations exposing ( translate, Keyword(..) )
@@ -50,13 +51,12 @@ render_page model =
             case model.currentPage of
                 Home ->
                     Home.view model
-
+                LeaveAMessage ->
+                    LAMessage.view
                 Login ->
                     text "Login"
-
                 About ->
                     text "About"
-
                 PostShow postid ->
                     text ("Render the post with id: " ++ toString postid)
     in
