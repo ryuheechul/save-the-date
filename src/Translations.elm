@@ -12,8 +12,11 @@ type Keyword
     | HowFars
     | AddToCal
     | WeddAddr
-    | FromYaksu
-    | FromHanganjin
+    | WeddAddrSub
+    | Shuttle
+    | Bus
+    | Subway
+    | Parking
     | Photo
     | Date
     | Map
@@ -32,8 +35,11 @@ kToS keyword =
        HowFar -> "howFar"
        AddToCal -> "addToCal"
        WeddAddr -> "weddAddr"
-       FromYaksu -> "fromYaksu"
-       FromHanganjin -> "fromHanganjin"
+       WeddAddrSub -> "weddAddrSub"
+       Shuttle -> "shuttle"
+       Bus -> "bus"
+       Subway -> "subway"
+       Parking -> "parking"
        Photo -> "photo"
        Date -> "date"
        Map -> "map"

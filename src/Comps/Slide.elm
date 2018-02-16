@@ -38,5 +38,6 @@ image url link =
              , class "w-100 d-block h-100"
              , target "_blank"
              ] [ img [ class "mx-auto d-block img-fluid h-100"
+                     , style [("max-height", "500px")]
                      , src url ] []
                ]

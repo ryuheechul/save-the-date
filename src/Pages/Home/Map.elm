@@ -1,6 +1,6 @@
 module Pages.Home.Map exposing (view)
 
-import Html exposing (div, ul, li, iframe, text, a, Html)
+import Html exposing (div, ul, li, iframe, text, a, pre, b, Html)
 import Html.Attributes exposing (class, style, src, height, href, target, id)
 import Constants exposing (mapUrl)
 import Translations exposing (translate, Keyword(..))
@@ -28,14 +28,23 @@ iframeStyle =
     ]
 
 addressView t =
-    div [ class "text-muted" ] [ text <| t WeddAddr ]
+    div [ class "text-muted" ]
+        [ div [] [ text <| t WeddAddr ]
+        , div [] [ text <| "(" ++ t WeddAddrSub ++ ")"]
+        ]
 
 recommended t =
     ul [ class "text-left" ]
-    [ li [] [ text <| t FromYaksu ]
-    , li [] [ text <| t FromHanganjin
-            , simpleLink "http://naver.me/FWHEVQ82"
+    [ li [] [ b [] [ text "Shuttle bus" ]
+            , pre [] [ text <| t Shuttle ] ]
+    , li [] [ b [] [ text "Subway" ]
+            , pre [] [ text <| t Subway ] ]
+    , li [] [ b [] [ text "Bus" ]
+            , div [] [ simpleLink "http://naver.me/FWHEVQ82" ]
+            , pre [] [ text <| t Bus ]
             ]
+    , li [] [ b [] [ text "Parking / Taxi" ]
+            , pre [] [ text <| t Parking ] ]
     ]
 
 simpleLink : String -> Html msg
