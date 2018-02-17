@@ -25,7 +25,10 @@ view urls albumUrl carouselState =
 caption title =
     let
         captionStyle =
-            style [ ("color", "#ddd")
+            style [ ("color", "white")
+                  , ("-webkit-text-fill-color", "black")
+                  , ("-webkit-text-stroke-width", "0.5px")
+                  , ("-webkit-text-stroke-color", "white")
                   ]
     in
         Slide.caption [ class "fade-in-on-hover" ] [ h3 [ captionStyle ] [ text title ] ]

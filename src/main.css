@@ -96,3 +96,15 @@
     height: 500px !important;
   }
 }
+
+/* a hack to prevent flicking on mobile browser */
+.carousel .carousel-item-left {
+  opacity: 0 !important;
+  transition: opacity .15s ease-in-out;
+}
+
+.carousel .carousel-item-next {
+  opacity: 1 !important;
+  transition: opacity .15s ease-in-out;
+}
+/* end of the hack */
