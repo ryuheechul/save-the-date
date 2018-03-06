@@ -10,7 +10,7 @@ const translations = {
     tellDDay: "일시: {{dDay}}.",
     howFar: "{{daysLeft}}일 남았습니다.",
     howFars: "{{daysLeft}}일 남았습니다.",
-    addToCal: "내 캘런더에 추가하기",
+    addToCal: "내 캘린더에 추가하기",
     weddAddr: "서울특별시 중구 장충단로 72 한국자유총연맹, 제이그랜하우스 젝시가든",
     weddAddrSub: "국립극장 맞은편, 반얀트리 호텔 옆",
     shuttle: "3호선 동대입구역 2번 출구 태극당 앞",
